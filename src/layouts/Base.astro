@@ -7,8 +7,6 @@ interface Props {
   image?: string;
 }
 
-// const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
 const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 ---
 
@@ -17,11 +15,7 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
     <!-- Global Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-    <meta name="generator" content={Astro.generator} />
-
-    <!-- Canonical URL -->
-    <!-- <link rel="canonical" href={canonicalURL} /> -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!-- Primary Meta Tags -->
     <title>{title}</title>
