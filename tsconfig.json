@@ -1,5 +1,7 @@
 {
   "extends": "astro/tsconfigs/strictest",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -7,8 +9,6 @@
       "@assets/*": ["src/assets/*"],
       "@layouts/*": ["src/layouts/*"],
       "@consts": ["src/consts.ts"]
-    },
-    "strictNullChecks": true
-  },
-  "exclude": ["dist"]
+    }
+  }
 }
